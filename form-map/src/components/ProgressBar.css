@@ -1,0 +1,171 @@
+.progress-bar-container {
+  margin: auto;
+  width: 75%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.progress-bar-background {
+  height: 30px;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+  overflow: hidden;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.progress-bar-foreground {
+  height: 100%;
+  background: linear-gradient(90deg, #34c759, #45a049);
+  width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: width 0.2s ease-in-out;
+}
+
+.progress-text {
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+}
+
+.progress-time-info {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.progress-time-info div {
+  margin-right: 20px;
+}
+
+.view-details-button {
+  background-color: teal;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view-details-button:hover {
+  background-color: rgb(8, 78, 78);
+}
+
+.progress-log {
+  font-size: 16px;
+  color: #444;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 15px;
+  padding-right: 15px;
+}
+
+.log-header {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.log-item {
+  margin-bottom: 5px;
+}
+
+.log-item strong {
+  color: #4caf50;
+}
+
+.progress-log ul {
+  padding-left: 20px;
+}
+
+.progress-log ul li {
+  margin-bottom: 5px;
+}
+
+.progress-time-info div {
+  margin-bottom: 5px;
+}
+
+.download-prompt {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.download-prompt button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.download-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
+.cancel-button:hover {
+  background-color: #e53935;
+}
+
+.download-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.visualize-button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.visualize-button {
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.visualize-button:hover {
+  background-color: rgb(8, 78, 78);
+}
+
+@media (max-width: 768px) {
+  .progress-bar-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .visualize-button-container {
+    margin-top: 15px;
+    text-align: center;
+  }
+}
